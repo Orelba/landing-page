@@ -5,81 +5,83 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Kitchen Shark</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="hero-container">
     <div class="navbar">
-      <h1 class="hero-header">Header Logo</h1>
-      <ul class="right-links">
-        <li><a href="#">header link one</a></li>
-        <li><a href="#">header link two</a></li>
-        <li><a href="#">header link three</a></li>
-      </ul>
+      <div class="navbar-wrapper">
+        <h1 class="hero-header">Kitchen Shark</h1>
+        <ul class="right-links">
+          <li><a href="#info">What's Cooking?</a></li>
+          <li><a href="#quote">The Quote</a></li>
+          <li><a href="https://github.com/Orelba/landing-page/">View On GitHub!</a></li>
+        </ul>  
+      </div>  
     </div>
 
     <div class="hero-content">
-      <div class="left-content">
-        <h2 class="hero-main-text">This website is awesome</h2>
-        <p class="hero-secondary-text">This website has some subtext that goes here under the main title. It's a smaller
-          font and the color is lower contrast</p>
-        <button class="hero-btn">Sign up</button>
+      <div class="hero-content-wrapper">
+        <div class="left-content">
+          <h2 class="hero-main-text">Mexican food is awesome</h2>
+          <p class="hero-secondary-text">We are honored to introduce you to some key dishes in the Mexican cuisine, a collection of tasty recipes from our weekly recipe newsletter</p>
+          <button class="hero-btn">Sign up</button>
+        </div>
+        <img src="images/mexican_spices.jpg" alt="Mexican Spices" class="hero-img">
       </div>
-      <img src="#" alt="" class="hero-img">
     </div>
   </div>
 
-  <div class="info-container">
-    <h2 class="info-header">Some random information.</h2>
+  <div id="info" class="info-container">
+    <h2 class="info-header">Weekly Favorites</h2>
     <div class="info-content">
       <div class="boxes">
         <div class="info-box">
-          <img alt="" class="info-img">
-          <div class="info-text">this is some subtext under an illustration or image</div>
+          <img src="images/chilaquiles.jpg" alt="Chilaquiles" class="info-img">
+          <div class="info-text">Chilaquiles</div>
         </div>
 
         <div class="info-box">
-          <img alt="" class="info-img">
-          <div class="info-text">this is some subtext under an illustration or image</div>
+          <img src="images/tacos_al_pastor.jpg"  alt="Tacos Al Pastor" class="info-img">
+          <div class="info-text">Tacos Al Pastor</div>
         </div>
       </div>
 
       <div class="boxes">
         <div class="info-box">
-          <img alt="" class="info-img">
-          <div class="info-text">this is some subtext under an illustration or image</div>
+          <img src="images/chile_en_nogada.jpg" alt="Chile en Nogada" class="info-img">
+          <div class="info-text">Chile en Nogada</div>
         </div>
 
         <div class="info-box">
-          <img alt="" class="info-img">
-          <div class="info-text">this is some subtext under an illustration or image</div>
+          <img src="images/tamales.jpg" alt="Tamales" class="info-img">
+          <div class="info-text">Tamales</div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="quote-container">
+  <div id="quote" class="quote-container">
     <div class="quote-wrapper">
-      <p class="quote-text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up
-        space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-      <div class="quote-source">-Thor, God of Thunder</div>
+      <p class="quote-text">If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.</p>
+      <div class="quote-source">-J.R.R. Tolkien</div>
     </div>
   </div>
 
   <div class="cta-container">
     <div class="cta-wrapper">
       <div>
-        <h2 class="cta-header">Call to action! It's time!</h2>
-        <p class="cta-text">Sign up for our product by clicking that button right over there!</p>
+        <h2 class="cta-header">Join our recipe program! It's going to be tasty!</h2>
+        <p class="cta-text">Sign up for our weekly recipe newsletter program by clicking that button right over there!</p>
       </div>
       <button class="cta-btn">Sign up</button>
     </div>
   </div>
 
   <footer>
-    <p class="footer-text">Copyright &copy; Orel Barzilay 2022</p>
+    <p>Copyright &copy; Orel Barzilay 2022</p>
   </footer>
 </body>
 

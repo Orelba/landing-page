@@ -1,2 +1,3 @@
 # landing-page
-A Landing Page Project
+This is a landing page project I've done for "The Odin Project" curriculum.  
+

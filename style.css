@@ -2,7 +2,9 @@ body,
 ul,
 .hero-container,
 .navbar,
+.navbar-wrapper,
 .hero-content,
+.hero-content-wrapper,
 .info-container,
 .boxes,
 .info-content,
@@ -10,6 +12,10 @@ ul,
 .cta-container,
 .cta-wrapper {
   display: flex;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,23 +34,46 @@ a {
   text-decoration: none;
   font-size: 18px;
   color: #e5e7eb;
+  transition: 0.10s;
+}
+
+a:hover {
+  color: black;
 }
 
 button {
   border: none;
   border-radius: 8px;
   height: 35px;
-  width: 115px;
+  min-width: 115px;
+  transition: 0.15s;
 }
 
+.cta-btn:hover,
+.hero-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Hero Section */
 .hero-container {
   flex-direction: column;
-  background-color: #1f2937;
+  background-color: #c02217;
+}
+
+.navbar-wrapper,
+.hero-content-wrapper {
+  width: 1130px;
 }
 
 .navbar {
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.navbar-wrapper {
   align-items: center;
-  padding: 0px 150px;
+  min-width: 540px;
 }
 
 .hero-header {
@@ -54,13 +83,18 @@ button {
 
 .right-links {
   margin-left: auto;
-  gap: 20px;
+  gap: 24px;
 }
 
 .hero-content {
   justify-content: center;
   align-items: center;
-  padding: 100px 150px;
+  padding: 100px 20px;
+}
+
+.hero-content-wrapper {
+  justify-content: center;
+  align-items: center;
   gap: 60px;
 }
 
@@ -85,16 +119,17 @@ button {
 
 .hero-btn {
   font-weight: bold;
-  background-color: #3882f6;
+  background-color: black;
   color: white;
 }
 
 .hero-img {
-  height: 250px;
-  width: 500px;
+  height: 300px;
   background-color: grey;
+  border-radius: 10px;
 }
 
+/* Info Section */
 .info-container {
   flex-direction: column;
   align-items: center;
@@ -103,7 +138,8 @@ button {
 .info-header {
   font-size: 36px;
   font-weight: 800;
-  color: #1f2937;
+  color: #c02217;
+  text-align: center;
 }
 
 .boxes,
@@ -113,8 +149,8 @@ button {
 
 .info-content {
   justify-content: center;
-  padding: 15px 150px;
-  margin-bottom: 85px;
+  padding: 15px 20px;
+  margin-bottom: 65px;
   flex-wrap: wrap;
 }
 
@@ -126,7 +162,7 @@ button {
 .info-img {
   height: 150px;
   width: 150px;
-  border: 5px solid #3882f6;
+  border: 5px solid #c02217;
   border-radius: 15px;
   margin-bottom: 5px;
 }
@@ -135,9 +171,10 @@ button {
   color: lightslategray;
 }
 
+/* Quote Section */
 .quote-container {
   flex-direction: column;
-  background-color: #e5e7eb;
+  background-color: #a8d3b5;
   padding: 80px 100px 100px;
   align-items: center;
 }
@@ -150,18 +187,19 @@ button {
   font-size: 36px;
   font-weight: 300;
   font-style: italic;
-  color: #1f2937;
+  color: #c02217;
   margin-bottom: 8px;
 }
 
 .quote-source {
   font-size: 22px;
-  color: #1f2937;
+  color: #c02217;
   font-weight: bold;
   margin-left: auto;
   width: fit-content;
 }
 
+/* Call To Action Section */
 .cta-container {
   justify-content: center;
   align-items: center;
@@ -169,12 +207,14 @@ button {
 }
 
 .cta-wrapper {
-  background-color: #3882f6;
+  background-color: black;
   color: white;
   border-radius: 6px;
   padding: 45px 100px;
   align-items: center;
-  gap: 150px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 150px;
 }
 
 .cta-header,
@@ -186,6 +226,7 @@ button {
 .cta-header {
   font-size: 21px;
   font-weight: 500;
+  /* text-align: center; */
 }
 
 .cta-text {
@@ -193,15 +234,16 @@ button {
 }
 
 .cta-btn {
-  background-color: #3882f6;
+  background-color: black;
   color: white;
   border: 2px solid white;
 }
 
+/* Footer Section */
 footer {
-  background-color: #1f2937;
+  background-color: #c02217;
   color: #e5e7eb;
   text-align: center;
   font-weight: 200;
-  padding: 20px 0;
+  padding: 15px 0;
 }
